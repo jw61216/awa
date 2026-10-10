@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <meta name="description" content="RFQ 분석, 내부 Excel 기준 대조, 이메일 처리 흐름을 시연하는 AI 업무 어시스턴트 포트폴리오." />
+  <title>AI Workflow Assistant | Portfolio</title>
+  <style>
+    :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; color: #172339; background: #f5f7fb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    .wrap { width: min(1060px, calc(100% - 36px)); margin: 0 auto; }
+    header { border-bottom: 1px solid #e7ebf2; background: #fff; }
+    .head { min-height: 69px; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+    .brand { font-weight: 800; letter-spacing: .08em; font-size: 13px; }
+    .headnote { font-size: 12px; color: #66758b; letter-spacing: .05em; }
+    main { padding: 42px 0 50px; }
+    .eyebrow { color: #3461a9; font-size: 12px; font-weight: 800; letter-spacing: .13em; margin: 0 0 12px; }
+    h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.24; letter-spacing: -.035em; margin: 0; }
+    .intro { font-size: 15px; line-height: 1.8; color: #55647b; margin: 14px 0 24px; }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 30px; }
+    .pill { border: 1px solid #dce5f0; border-radius: 100px; background: #fff; color: #445570; font-size: 12px; font-weight: 600; padding: 8px 13px; }
+    .viewer { border: 1px solid #dfe5ee; border-radius: 15px; background: #fff; overflow: hidden; box-shadow: 0 10px 32px rgba(24, 41, 65, .045); }
+    .viewer-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 15px 20px; border-bottom: 1px solid #e8ecf2; }
+    .viewer-title { margin: 0; font-size: 15px; font-weight: 750; }
+    .button { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; font-size: 13px; font-weight: 700; background: #233c66; color: #fff; border-radius: 8px; padding: 10px 15px; }
+    .button:hover, .button:focus-visible { background: #31578c; }
+    iframe { display: block; width: 100%; height: min(77vw, 1000px); min-height: 560px; border: 0; background: #f7f9fc; }
+    .viewer-foot { margin: 0; padding: 13px 20px; font-size: 12px; color: #6b778b; background: #fff; line-height: 1.6; }
+    footer { color: #8792a4; font-size: 12px; margin-top: 28px; text-align: center; }
+    @media (max-width: 580px) {
+      .head { min-height: 60px; }
+      .headnote { display: none; }
+      main { padding-top: 30px; }
+      .intro { font-size: 14px; }
+      .viewer-head { align-items: stretch; }
+      .button { width: 100%; }
+      iframe { height: 72vh; min-height: 420px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap head">
+      <div class="brand">AI WORKFLOW ASSISTANT</div>
+      <div class="headnote">OVERSEAS SALES · WORKFLOW PROTOTYPE</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="eyebrow">PROJECT PORTFOLIO</p>
+    <h1>해외영업 업무를 위한 AI 어시스턴트</h1>
+    <p class="intro">RFQ 분석부터 내부 자료 대조, 이메일 작성 및 확인 절차까지.<br />실제 업무 흐름을 바탕으로 구성한 프로토타입입니다.</p>
+    <div class="pills" aria-label="주요 기능">
+      <span class="pill">RFQ 분석</span>
+      <span class="pill">Excel 데이터 대조</span>
+      <span class="pill">이메일 업무 지원</span>
+      <span class="pill">최종 승인 절차</span>
+    </div>
+
+    <section class="viewer" aria-labelledby="portfolio-heading">
+      <div class="viewer-head">
+        <h2 class="viewer-title" id="portfolio-heading">포트폴리오 미리보기</h2>
+        <a class="button" href="./p.pdf" target="_blank" rel="noopener noreferrer">원본 PDF 열기 ↗</a>
+      </div>
+      <iframe src="./p.pdf#view=FitH" title="AI 업무 어시스턴트 포트폴리오 PDF 미리보기" loading="eager"></iframe>
+      <p class="viewer-foot">PDF 미리보기가 표시되지 않거나 모바일에서 읽기 어렵다면 '원본 PDF 열기'를 선택하세요.</p>
+    </section>
+
+    <footer>AI Workflow Assistant · Portfolio</footer>
+  </main>
+</body>
+</html>
